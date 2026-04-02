@@ -1,0 +1,17 @@
+version: 2
+
+exposures:
+  - name: executive_dashboard
+    label: Executive Dashboard
+    type: dashboard
+    maturity: low
+    url: https://c2cfa673.us1a.app.preset.io/superset/dashboard/8/?native_filters_key=EfV4If_Wy6CgT305-Sdob4_Cy66ybou1sGZJ5CljumXCDvAIvumI8dmtkDONI492
+    description: Executive Dashboard about Airbnb listings and hosts
+      
+    depends_on:
+      - ref('dim_listings_w_hosts')
+      - ref('mart_fullmoon_reviews')
+
+    owner:
+      name: Saiyam M
+      email: saiyam@commaeight.com
